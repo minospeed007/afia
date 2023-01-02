@@ -1,0 +1,10 @@
+.review{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.order{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
