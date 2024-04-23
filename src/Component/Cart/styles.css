@@ -1,0 +1,58 @@
+.add-cart{
+    height: 20rem;
+    width: 100%;
+    
+  }
+  .add-cart-btn{
+    
+    border-radius: 5px;
+    border-width: 1px;
+    height:2rem;
+    background-color: white!important;
+    margin-top:1.2rem;
+    margin-bottom: 1rem;
+    font-size:1rem;
+    width:9.5rem;
+    color:black;
+  }
+  .add-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  .add-cart-parent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90%;
+  }
+  .cardContent {
+    display: flex;
+  }
+  
+  .cardActions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .buttons {
+    display: flex;
+    margin-right: 10px;
+    color: black;
+  }
+  
+  .sub-heading{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .parent-card{
+    margin-top:2rem;
+    display: flex;
+flex-wrap: wrap;
+justify-content: center;
+    gap: 1rem;
+    align-items:center;
+  }

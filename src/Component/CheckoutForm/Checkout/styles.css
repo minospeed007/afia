@@ -1,0 +1,72 @@
+.appBar {
+  position: relative;
+}
+
+.toolbar {
+  min-height: 64px; 
+}
+.review{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout {
+  margin-top: 5%;
+  width: auto;
+  margin-left: 16px; /* Assuming default theme.spacing(2) */
+  margin-right: 16px; /* Assuming default theme.spacing(2) */
+}
+
+@media (min-width: 600px) {
+  .layout {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.paper {
+  margin-top: 24px; /* Assuming default theme.spacing(3) */
+  margin-bottom: 24px; /* Assuming default theme.spacing(3) */
+  padding: 16px; /* Assuming default theme.spacing(2) */
+}
+
+@media (max-width: 599px) {
+  .paper {
+    width: 100%;
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 600px) {
+  .paper {
+    margin-top: 48px; /* Assuming default theme.spacing(6) */
+    margin-bottom: 48px; /* Assuming default theme.spacing(6) */
+    padding: 24px; /* Assuming default theme.spacing(3) */
+  }
+}
+
+.stepper {
+  padding: 48px 0 80px; /* Assuming default theme.spacing(3) and theme.spacing(5) */
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  margin-top: 24px; /* Assuming default theme.spacing(3) */
+  margin-left: 8px; /* Assuming default theme.spacing(1) */
+}
+
+.divider {
+  margin: 20px 0;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

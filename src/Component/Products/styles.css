@@ -1,0 +1,27 @@
+.contents{
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+.product-rootd {
+  margin-top: 15rem;
+}
+
+
+.products-grids{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:0;
+  width: 80% !important;
+}
+
+.products-gridsd{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:0;
+  width: 80% !important;
+}
