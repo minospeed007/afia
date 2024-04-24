@@ -46,13 +46,11 @@ console.log(countries)
     if (shippingCountry) fetchSubdivisions(shippingCountry);
 
     console.log(shippingCountry)
-      // eslint-disable-next-line react-hooks/exhaustive-deps
+}, [shippingCountry,checkoutToken?.id]);
 
-  }, [shippingCountry,checkoutToken.id]);
-
-  useEffect(() => {
-    if (shippingSubdivision) fetchShippingOptions(checkoutToken.id, shippingCountry, shippingSubdivision);
-  }, [shippingSubdivision]);
+useEffect(() => {
+  if (shippingSubdivision) fetchShippingOptions(checkoutToken.id, shippingCountry, shippingSubdivision);
+}, [shippingSubdivision, shippingCountry,checkoutToken?.id]);
 
   return (
     <>  
