@@ -1,5 +1,4 @@
 import React, {createContext,useState, useEffect} from 'react'
-import { useNavigate } from 'react-router-dom'
 
 import axios from 'axios'
 export const AuthContext =createContext()
@@ -18,6 +17,7 @@ export const AuthContextProvider=({children})=>{
             const res=  await axios.post("http://localhost:8080/login",input)
     setCurrentUser(res.data)
     setIsError(res?.data?.message)
+    console.log(err);
 
         }catch(err){
             setErr(err)

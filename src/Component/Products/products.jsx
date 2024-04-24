@@ -1,7 +1,6 @@
 import {useState, useEffect} from 'react';
-import { CircularProgress, Grid,Input } from '@mui/material';
+import { CircularProgress, Grid} from '@mui/material';
 import './styles.css';
-import { useLocation } from 'react-router-dom'; 
 import {useSearch} from '../../context/searchContext';
 
 
@@ -13,7 +12,6 @@ const Products = ({  onAddToCart }) => {
   const [products , setProducts]=useState([])
     const [searchProducts, setSearchProducts]=useState([])
     const {search, }=useSearch();
-    const location= useLocation();
 
     const fetchProduct= async ()=>{
       const{data} = await commerce.products.list()

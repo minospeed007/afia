@@ -4,7 +4,6 @@ import { AuthContext } from '../context/AuthContext'
 const AdminLogin=()=>{
 const [input, setInput]=useState({username:"", password:""})
 
-const [loginStatus, setLoginStatus]= useState([])
 const navigate=useNavigate()
 
 const {currentUser}=useContext(AuthContext)

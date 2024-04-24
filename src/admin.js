@@ -1,10 +1,8 @@
 import {Link} from 'react-router-dom'
 import {useState } from 'react'
-import Add from './Component/addUser'
 import{Paper} from '@mui/material';
 
 import Users from './Component/Users'
-import DeleteUser from './Component/deleteUser'
 const Admin=()=>{
 const [ showUsers, setShowUsers]= useState(false)
 

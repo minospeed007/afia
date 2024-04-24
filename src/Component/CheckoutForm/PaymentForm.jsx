@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {Typography, Button, Divider} from '@mui/material'
-import{Elements, CardElement,CardConsumer, 
+import{Elements, CardElement,
     ElementsConsumer} from '@stripe/react-stripe-js'
 import {loadStripe} from '@stripe/stripe-js'
 import Review from './review'

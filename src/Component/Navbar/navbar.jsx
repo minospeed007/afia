@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { AppBar, Toolbar, IconButton, Button, Badge, Input, Typography, Menu, MenuItem } from '@mui/material';
+import { AppBar, Toolbar, IconButton, Badge,  Typography, Menu, MenuItem } from '@mui/material';
 import { ShoppingCart , } from '@mui/icons-material';
 import SearchIcon from '@mui/icons-material/Search';
 import logo from '../../assests/commerce.png';

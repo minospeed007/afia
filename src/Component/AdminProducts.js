@@ -2,7 +2,7 @@ import React from 'react';
 
 
 import AdminProduct from './AdminProduct';
-import{Input,Grid, CircularProgress} from '@mui/material';
+import{ CircularProgress} from '@mui/material';
 
 const AdminProducts = ({ products, setProducts,searchProduct, onAddToCart }) => {
     

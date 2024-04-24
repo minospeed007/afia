@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, Button, Box} from '@mui/material'
+import {  Button, Box} from '@mui/material'
 import './styles.css'
 import {Link} from 'react-router-dom'
 import CartItem from './CartItem/cartItem'

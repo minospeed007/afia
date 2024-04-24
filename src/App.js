@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { commerce } from './lib/commerce';
 import './App.css';
 import { SearchProvider } from './context/searchContext';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import {  Routes, Route } from 'react-router-dom';
 import { Products, Navbar, Cart, Checkout, Login, Add,Footer,
    Users, Register, Update, Admin, RegisterAdmin, AdminLogin, 
    AdminAddUser, AdminProducts,  } from './Component';

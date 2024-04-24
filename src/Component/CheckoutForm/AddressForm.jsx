@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { InputLabel, Select, MenuItem, Button, Grid, Typography } from '@mui/material';
+import { InputLabel, Select, MenuItem, Button, Grid } from '@mui/material';
 import { useForm, FormProvider } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 
@@ -40,12 +40,15 @@ console.log(countries)
 
   useEffect(() => {
     fetchShippingCountries(checkoutToken.id);
-  }, []);
+  }, [checkoutToken.id]);
 
   useEffect(() => {
     if (shippingCountry) fetchSubdivisions(shippingCountry);
+
     console.log(shippingCountry)
-  }, [shippingCountry]);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+
+  }, [shippingCountry,checkoutToken.id]);
 
   useEffect(() => {
     if (shippingSubdivision) fetchShippingOptions(checkoutToken.id, shippingCountry, shippingSubdivision);
