@@ -102,7 +102,7 @@ const Navbar = ({ totalItems }) => {
           )}
 
           {location.pathname === '/' && (
-            <div className='log-div'>
+            <div className='log-divs'>
               <div className='log-div'>
                 {currentUser ? (
                   <p onClick={logout} className='p-log'>

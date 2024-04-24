@@ -8,12 +8,18 @@
 
 }
 .log-div{
-  margin-right: 1rem;
+  display: flex;
+
+justify-content: center; 
+align-items: center;
+gap:1rem;
+ margin-right: 1rem;
 }
 .shopping-carts{
   margin-right: .5rem;
 }
-.title {
+.login-title {
+  color:white;
   flex-grow: 1;
   align-items: center;
   display: flex;
