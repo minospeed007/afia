@@ -1,12 +1,4 @@
 
-
-@media (min-width: 600px) {
-  .appbar {
-    width: calc(100% - 0px); 
-    margin-left: 0px;  
-}
-
-}
 .log-div{
   display: flex;
 
@@ -30,7 +22,8 @@ gap:1rem;
   align-items: center;
   justify-content: center;
   margin-left: .5rem;
-  height: 2.8rem;
+  height: 3rem;
+  width: 3rem;
   background-color: orange;
 
 }
@@ -77,11 +70,8 @@ gap:1rem;
   margin-right: 16px; 
 }
 
-@media (min-width: 600px) {
-  .menuButton {
-    display: none;
-  }
-}
+
+
 
 .grow {
   flex-grow: 1;
@@ -112,13 +102,216 @@ gap:1rem;
 }
 
 .inputInput {
-  padding: 8px 12px; /* Assuming default theme.spacing(1) and theme.spacing(2) */
+  padding: 8px 12px; 
   transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   width: 100%;
 }
 
-@media (min-width: 960px) {
-  .inputInput {
-    width: 20ch;
+
+@media screen and  (max-width:930px) {
+.search-icon-div{
+  height: 3rem;
+  width:3rem;
+
+}
+.search-inputs::placeholder{
+  font-size: 1.2rem;
+}
+.search-icon{
+  font-size: 3rem !important;
+}
+ .appbar{
+  display:flex;
+  padding-top: 1rem;
+  padding-bottom:1rem;
+  margin-left: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.image {
+  width: 5rem !important;
+  height: 5rem !important;
+  
+}
+
+h2{font-size:2rem }
+
+ .order-cart {
+  font-size: 2.8rem !important ;
+}
+
+.p-log{
+  font-size: 1.3rem;
+}
+
+}
+
+
+@media screen and (max-width: 753px) {
+  .search-cryptos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .shopping-cart{
+    width: auto;
+  }
+  .appbar{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    margin-left:0.5rem;
+    
+  }
+  .search-icon{
+    font-size: 3rem;
+  }
+  .search-inputs::placeholder{
+    font-size: 1rem;
+  }
+  .log-div {
+    margin-top:1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+    margin-bottom: 1rem;
+  }
+  .log-div > p{
+    font-size: 1rem !important;
+  }
+  .shopping-cart{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 0;
+  }
+  .image {
+    width: 4rem !important;
+    height: 4rem !important;
+    margin-left: .2rem;
+    
+  }
+  
+  h2{
+    font-size:1.5rem !important;
+    margin-left:.2rem;
+  }
+  
+   .order-cart {
+    font-size: 2rem !important;
+  }
+  
+  .p-log{
+    font-size: 1.3rem;
+  }
+ 
+
+  .search-cryptos {
+    margin-left: 0;
+    width: 100%;
+  }
+.search-icon-div{
+  background-color: orange;
+}
+  .search-inputs {
+    width: 19rem; 
+  }
+
+ 
+}
+
+@media screen and (max-width: 557px) {
+  .search-cryptos{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: center;
+  }
+  
+  .search-icon{
+    font-size: 3rem;
+  }
+  .search-inputs::placeholder{
+    font-size: 1rem;
+  }
+  .log-div {
+    display:flex;
+    align-items: center;
+justify-content:flex-end !important ;
+margin-right:1rem  !important;   
+  }
+  .log-div > p{
+    font-size: 1rem !important;
+  }
+  .shopping-cart{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 0.9rem;
+  }
+  .image {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+    margin-left: 1rem;
+    
+  }
+  
+  h2{
+    font-size:1.5rem !important;
+    margin-left:0;
+  }
+  
+   .order-cart {
+    font-size: 2rem !important;
+  }
+  
+  .p-log{
+    font-size: 1.3rem;
+  }
+  .appbar{
+    display: block;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .search-cryptos {
+    margin-left: 0;
+    width: 100%;
+  }
+.search-icon-div{
+  width: 2rem;
+  height:2rem;
+}
+.search-icon{
+  font-size: 2rem !important;
+}
+.search-inputs {
+  width: 13rem; 
+  height: 2rem;
+}
+
+ .search-inputs::placeholder{
+  font-size: .7rem !important;
+ }
+}
+
+@media screen and (max-width:360px) {
+  .search-inputs {
+    width: 10rem; 
+    height: 2rem;
+  }
+  .search-icon{
+    font-size: 1.9rem !important;
+  }
+  .search-icon-div{
+    width: 1.9rem;
+    height:1.9rem;
+    background-color: gold;
+  }
+  .image{
+    width: 3rem;
+    height: 3rem;
   }
 }

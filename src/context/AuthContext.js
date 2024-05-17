@@ -4,7 +4,7 @@ import axios from 'axios'
 export const AuthContext =createContext()
 
 export const AuthContextProvider=({children})=>{
-    const [currentUser,setCurrentUser]=useState(localStorage.getItem("user")||null)
+    const [currentUser,setCurrentUser]=useState(localStorage.getItem("user")||'mino')
     const [err, setErr] = useState('')
     const [isError, setIsError] = useState('')
     const [adError, setAdError] = useState('')

@@ -82,19 +82,18 @@ const Navbar = ({ totalItems }) => {
                 onChange={(e) => setSearch(e.target.value)}
               />
               <div className='search-icon-div'>
-                <SearchIcon className='search-icon' style={{ fontSize: '2.5rem' }} />
+                <SearchIcon className='search-icon'  />
                 </div>
-            </div>
-          )}
-
-
-
+           
+             
+           </div>
+            )}
           {location.pathname === '/admin/dashboard' && (
             <div className='logino'>
               <div className='login1o'>
                 {currentUser ? (
                   <p onClick={adminLogout} className='p-log'>
-                    {currentUser?.username} | Logout
+                    {currentUser?.username}  Logout
                   </p>
                 ) : null}
               </div>
@@ -106,31 +105,37 @@ const Navbar = ({ totalItems }) => {
               <div className='log-div'>
                 {currentUser ? (
                   <p onClick={logout} className='p-log'>
-                    {currentUser?.username} | Logout
+                    {currentUser?.username}  Logout
                   </p>
                 ) : (
-                  <Link to='/login' className='login-title'>
+                  <Link to='/login' className='p-log'>
                     <p className='login-title'>Login</p>
                   </Link>
                 )}
-                {!currentUser && (
+               {!currentUser && (
                   <Link to='/register' className='login-title'>
-                    <p className='login-title'>Register</p>
+                    <p className='p-log'>Register</p>
                   </Link>
                 )}
               </div>
 
               <div className='shopping-cart'>
+              
                 <IconButton component={Link} to='/cart' aria-label='show cart item' color='inherit'>
-                  <Badge badgeContent={totalItems} color='secondary'>
-                    <ShoppingCart />
+                  <Badge badgeContent={totalItems} color='primary' >
+                    <ShoppingCart className='order-cart'/>
                   </Badge>
                 </IconButton>
             </div>
             </div>
+            
+  
+  
 
+         
           )}
           </div>
+          
 
         </Toolbar>
       </AppBar>

@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { commerce } from './lib/commerce';
 import './App.css';
 import { SearchProvider } from './context/searchContext';
-import {  Routes, Route } from 'react-router-dom';
+import {  Routes, Route} from 'react-router-dom';
 import { Products, Navbar, Cart, Checkout, Login, Add,Footer,
    Users, Register, Update, Admin, RegisterAdmin, AdminLogin, 
    AdminAddUser, AdminProducts,  } from './Component';
+
 
 const App = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -20,6 +21,7 @@ const App = () => {
     try {
       const { data } = await commerce.products.list();
       setProducts(data);
+      console.log('app.jx',data)
     } catch (error) {
       console.error('Error fetching products:', error);
     }
@@ -106,12 +108,14 @@ const App = () => {
     <div className='root-div'>
       
       <div style={{ display: 'flex' }}>
-        <Navbar totalItems={cart?.total_items} handleDrawerToggle={handleDrawerToggle} />
+      <Navbar totalItems={cart?.total_items} handleDrawerToggle={handleDrawerToggle} />
+
         <div className='parent'>
           <Routes>
             <Route exact path='/' element={<Products searchProducts={searchProducts} onAddToCart={handleAddToCart} />} />
             <Route exact path='/admin/products' element={<AdminProducts products={products} setSearch={setSearch} searchProduct={searchProducts} onAddToCart={handleAddToCart} />} />
             <Route exact path='/admin/dashboard' element={<Admin />} />
+
             <Route exact path='/cart' element={<Cart cart={cart} handleUpdateCartQty={handleUpdateCartQty} handleRemoveFromCart={handleRemoveFromCart} handleEmptyCart={handleEmptyCart} />} />
             <Route exact path='/checkout' element={<Checkout cart={cart} order={order} handleCaptureCheckout={handleCaptureCheckout} errorMessage={errorMessage} totalItems={cart?.total_items} />} />
             <Route path='/add' element={<Add />} />

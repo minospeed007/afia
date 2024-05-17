@@ -12,7 +12,7 @@ const Product = ({product, onAddToCart }) => {
 
   return (
     <>
-    
+    <div className='space' ></div>
     <Grid container className="card-container">
     <Grid item  className='grid-cards'>
     
@@ -36,15 +36,14 @@ const Product = ({product, onAddToCart }) => {
           <div className='product-desc' >
           <Typography 
          dangerouslySetInnerHTML={{ __html: product.description }}
-          variant="body2" color="textSecondary" component="p" />
-          </div>
+          variant="body2" color="textSecondary" component="p" />  
+           </div>
           <div className='rating-div'>
       <Stack spacing={1} sx={{ '& .MuiRating-icon': { fontSize: '16px' } }}>
   <Rating name="half-rating-read" defaultValue={4.5} precision={0.5} readOnly />
 </Stack>
 </div>
           <CardActions disableSpacing className='action-cart'>
-         
         <button className='btn-cart' onClick={handleAddToCart}>
           Add to Cart <AddShoppingCart className="cart"/>
         </button>
